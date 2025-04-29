@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/express-app-cicd:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/perfumes-frontend:latest
     - name: Deploy
         # Only run this step if the branch is main
       if: github.ref == 'refs/heads/main'
